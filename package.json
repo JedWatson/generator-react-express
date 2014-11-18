@@ -1,13 +1,12 @@
 {
   "name": "generator-react-express",
   "version": "0.0.0",
-  "description": "Yeoman generator",
+  "description": "Yeoman generator for ReactJS + Express projects with Browserify",
   "license": "MIT",
   "main": "app/index.js",
   "repository": "JedWatson/generator-react-express",
   "author": {
     "name": "Jed Watson",
-    "email": "",
     "url": "https://github.com/JedWatson"
   },
   "engines": {
@@ -20,12 +19,15 @@
     "app"
   ],
   "keywords": [
-    "yeoman-generator"
+    "yeoman-generator",
+    "react",
+    "express",
+    "browserify",
+    "app"
   ],
   "dependencies": {
-    "yeoman-generator": "^0.17.0",
     "chalk": "^0.5.0",
-    "yosay": "^0.3.0"
+    "yeoman-generator": "^0.18.0"
   },
   "devDependencies": {
     "mocha": "*"
