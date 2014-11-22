@@ -4,7 +4,13 @@
   "description": "Yeoman generator for ReactJS + Express projects with Browserify",
   "license": "MIT",
   "main": "app/index.js",
-  "repository": "JedWatson/generator-react-express",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JedWatson/generator-react-express.git"
+  },
+  "bugs": {
+    "url": "https://github.com/JedWatson/generator-react-express/issues"
+  },
   "author": {
     "name": "Jed Watson",
     "url": "https://github.com/JedWatson"
