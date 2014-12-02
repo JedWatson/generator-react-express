@@ -29,7 +29,7 @@ var App = React.createClass({
 			<div className="container">
 				<Header />
 				<PageNav />
-				<this.props.activeRouteHandler/>
+				<Router.RouteHandler/>
 			</div>
 		);
 	}
@@ -41,13 +41,13 @@ var routes = {
 };
 
 var routes = (
-	<Router.Routes location="history">
-		<Router.Route name="app" path="/" handler={App}>
-			<Router.Route name="home" path="/" handler={routes.Home}/>
-			<Router.Route name="about" path="/about" handler={routes.About}/>
-			<Router.DefaultRoute handler={routes.Home}/>
-		</Router.Route>
-	</Router.Routes>
+	<Router.Route name="app" path="/" handler={App}>
+		<Router.Route name="home" path="/" handler={routes.Home}/>
+		<Router.Route name="about" path="/about" handler={routes.About}/>
+		<Router.DefaultRoute handler={routes.Home}/>
+	</Router.Route>
 );
 
-React.renderComponent(routes, document.body);
+Router.run(routes, Router.HistoryLocation, function (Handler) {
+	React.render(<Handler/>, document.body);
+});

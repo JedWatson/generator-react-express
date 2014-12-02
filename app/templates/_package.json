@@ -11,8 +11,8 @@
     "less-middleware": "^1.0.4",
     "nunjucks": "^1.1.0",
     "react": "^0.12.1",
-    "react-router": "~0.10.2",
-    "reactify": "~0.17.1"
+    "react-router": "^0.11.4",
+    "reactify": "^0.17.1"
   },
   "scripts": {
     "start": "node server.js",
