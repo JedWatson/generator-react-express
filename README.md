@@ -4,6 +4,8 @@
 
 Builds a simple project to help you get started with React on the client, express for the server and browserify to pull it all together.
 
+JSX and ES6 are transpiled by Babel. The `object-assign` babel plugin is included by default.
+
 
 ## Getting Started
 
