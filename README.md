@@ -4,7 +4,7 @@
 
 Builds a simple project to help you get started with React on the client, express for the server and browserify to pull it all together.
 
-JSX and ES6 are transpiled by Babel. The `object-assign` babel plugin is included by default.
+JSX and ES6 are transpiled by Babel. The `object-assign` babel plugin is also included.
 
 
 ## Getting Started
@@ -22,6 +22,13 @@ yo react-express
 ```
 
 ... and follow the prompts.
+
+
+### Includes `react/addons`
+
+To avoid a nasty bug that can happen when `react/addons` is used without being declared in the common bundle, it is included by default.
+
+If you don't need the additional addons in your project, remove that line from the `client/config.js` file in your project to reduce your common bundle size.
 
 
 ## Feedback?
