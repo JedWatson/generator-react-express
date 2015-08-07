@@ -28,7 +28,9 @@ app.get('/js/' + config.common.bundle, browserify(config.common.packages, {
 // excluding common packages.
 app.use('/js', browserify('./client/scripts', {
 	external: config.common.packages,
-	transform: [babelify]
+	transform: [babelify.configure({
+		plugins: ['object-assign']
+	})]
 }));
 
 /*
