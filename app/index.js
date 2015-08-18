@@ -81,7 +81,7 @@ var ReactExpressGenerator = yeoman.generators.Base.extend({
 			'\n' +
 			'\nAnything you place in /public will be served as static assets.' +
 			'\n' +
-			'\nType ' + chdir + '"node server" to start the server.' +
+			'\nType ' + chdir + '"npm start" to start the server.' +
 			'\n'
 		);
 	}
