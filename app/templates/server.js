@@ -1,9 +1,9 @@
-var express = require('express'),
-	browserify = require('browserify-middleware'),
-	reactify = require('reactify'),
-	less = require('less-middleware'),
-	nunjucks = require('nunjucks'),
-	config = require('./client/config');
+var express = require('express');
+var babelify = require('babelify');
+var browserify = require('browserify-middleware');
+var less = require('less-middleware');
+var nunjucks = require('nunjucks');
+var config = require('./client/config');
 
 // initialise express
 var app = express();
