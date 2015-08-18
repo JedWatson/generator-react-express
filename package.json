@@ -37,6 +37,8 @@
   ],
   "dependencies": {
     "chalk": "^1.1.0",
+    "object-assign": "^3.0.0",
+    "speakingurl": "^6.0.0",
     "yeoman-generator": "^0.20.2"
   },
   "devDependencies": {
